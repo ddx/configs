@@ -11,5 +11,3 @@ echo -e "\nProvision runtime: $SECONDS seconds\n\n"
 echo -e "Guest VM Network Interfaces"
 echo -e "--------------------------------"
 ip -f inet -o addr | awk 'gsub("/.*$", "")'
-
-echo "Provisioning Complete!"
